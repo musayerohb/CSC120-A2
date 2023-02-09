@@ -10,6 +10,16 @@ class ResaleShop:
     inventory = []
     name = ""
     
+    def __init__(self, name, inventory) -> None:
+        """"Adds a created computer to the inventory, which is a list.
+
+        :param self: The ResaleShop.
+        :param computer: The selected computer.
+        :return: None
+        """
+        self.name = name
+        self.inventory = inventory
+        
     def add_to_inventory(self, computer) -> None:
         """"Adds a created computer to the inventory, which is a list.
 
@@ -76,14 +86,5 @@ class ResaleShop:
         else:
             print("Item not found. Please select another item to refurbish.")
 
-    def __init__(self, name, inventory) -> None:
-        """"Adds a created computer to the inventory, which is a list.
 
-        :param self: The ResaleShop.
-        :param computer: The selected computer.
-        :return: None
-        """
-        self.name = name
-        self.inventory = inventory
-        
 
